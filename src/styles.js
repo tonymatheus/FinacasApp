@@ -1,23 +1,14 @@
 import styled from 'styled-components/native';
+import {getStatusBarHeight} from 'react-native-status-bar-height';
 
 export const Container = styled.View`
   flex: 1;
-  background-color: #ff0000;
+  background-color: #0b3b80;
+  padding-top: ${0 + getStatusBarHeight()};
 `;
 
 export const Titulo = styled.Text`
-  font-size: 35px;
+  font-size: 25px;
   color: #ffff;
-`;
-
-export const Botao = styled.TouchableOpacity`
-  color: #000;
-  background-color: #ffff;
-  width: 100%;
-  height: 50%;
-`;
-
-export const BotaoTexto = styled.Text`
-  font-size: ${props => `${props.tamanho}px`};
-  color: ${props => `${props.cor}`};
+  text-align: center;
 `;
