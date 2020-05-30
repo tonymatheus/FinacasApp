@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import {Plataform} from 'react-native';
 import {
   Background,
@@ -12,11 +12,18 @@ import {
   Input,
 } from './styles';
 import {useNavigation} from '@react-navigation/native';
+import {AuthConText} from '../../contexts/auth';
 
 export default function SignIn() {
+  const navigation = useNavigation();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigation = useNavigation();
+  const {user} = useContext(AuthConText);
+
+  function handleLogin() {
+    console.log(user.nome);
+  }
   return (
     <Background>
       <Container behavior={Platform.OS === 'ios' ? 'padding' : ''} enabled>
@@ -45,7 +52,7 @@ export default function SignIn() {
           />
         </AreaInput>
 
-        <SubmitButton>
+        <SubmitButton onPress={handleLogin}>
           <SubmitText>Acessar</SubmitText>
         </SubmitButton>
 
