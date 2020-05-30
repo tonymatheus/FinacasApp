@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, View} from 'react-native';
+import {Plataform} from 'react-native';
 import {
   Background,
   Container,
@@ -11,13 +11,15 @@ import {
   AreaInput,
   Input,
 } from './styles';
+import {useNavigation} from '@react-navigation/native';
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigation = useNavigation();
   return (
     <Background>
-      <Container>
+      <Container behavior={Platform.OS === 'ios' ? 'padding' : ''} enabled>
         <Logo source={require('../../assets/Logo.png')} />
         <AreaInput>
           <Input
@@ -47,7 +49,7 @@ export default function SignIn() {
           <SubmitText>Acessar</SubmitText>
         </SubmitButton>
 
-        <Link>
+        <Link onPress={() => navigation.navigate('SignUp')}>
           <LinkText>Criar Uma Conta</LinkText>
         </Link>
       </Container>
