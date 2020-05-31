@@ -15,10 +15,12 @@ export default function SignIn() {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const {user} = useContext(AuthConText);
+  const {signUp} = useContext(AuthConText);
 
-  console.log(user.nome);
-  console.log(user.uid);
+  function handleSignUp() {
+    signUp(email, password, nome);
+  }
+
   return (
     <Background>
       <Container behavior={Platform.OS === 'ios' ? 'padding' : ''}>
@@ -57,7 +59,7 @@ export default function SignIn() {
           />
         </AreaInput>
 
-        <SubmitButton>
+        <SubmitButton onPress={handleSignUp}>
           <SubmitText>Cadastrar</SubmitText>
         </SubmitButton>
       </Container>
