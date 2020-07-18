@@ -29,5 +29,5 @@ export const TipoText = styled.Text`
 export const ValorText = styled.Text`
   color: #222;
   font-weight: bold;
-  font-size: 22;
+  font-size: 20px;
 `;
