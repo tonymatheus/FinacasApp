@@ -15,13 +15,11 @@ export default function Picker({onChange}) {
           },
         }}
         placeholder={{
-          label: 'Selecione um Tipo',
+          label: 'Selecione o tipo',
           color: '#222',
           value: null,
         }}
-        onValueChange={tipo => {
-          onChange(tipo);
-        }}
+        onValueChange={tipo => onChange(tipo)}
         items={[
           {label: 'Receita', value: 'receita', color: '#222'},
           {label: 'Despesa', value: 'despesa', color: '#222'},
