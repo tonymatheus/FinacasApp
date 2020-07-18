@@ -1,5 +1,4 @@
 import React from 'react';
-import {View, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 import {Container, Tipo, IconView, TipoText, ValorText} from './styles';
 export default function HistoricoList({data}) {
