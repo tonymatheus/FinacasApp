@@ -1,13 +1,8 @@
 import React, {useState} from 'react';
-import {
-  View,
-  Text,
-  SafeAreaView,
-  Keyboard,
-  TouchableWithoutFeedback,
-} from 'react-native';
+import {SafeAreaView, Keyboard, TouchableWithoutFeedback} from 'react-native';
 import Header from '../../components/Header';
 import {Background, Input, SubmitButtom, SubmitText} from './styles';
+import Picker from '../../components/Picker';
 
 export default function New() {
   const [valor, setValor] = useState('');
@@ -25,7 +20,7 @@ export default function New() {
             value={valor}
             onChangeText={text => setValor(text)}
           />
-
+          <Picker onChange={setTipo} />
           <SubmitButtom>
             <SubmitText>Resgistrar</SubmitText>
           </SubmitButtom>
