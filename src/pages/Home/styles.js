@@ -39,3 +39,9 @@ export const List = styled.FlatList.attrs({
   margin-left: 8px;
   margin-right: 8px;
 `;
+export const BtnRegistrar = styled.TouchableOpacity`
+  background-color: #222;
+  border-radius: 15px;
+  height: 20px;
+  margin-right: 280px;
+`;
