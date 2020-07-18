@@ -24,9 +24,9 @@ function AppRoutes() {
           marginVertical: 5,
         },
       }}>
-      <AppDrawer.Screen name="Home " component={Home} />
+      <AppDrawer.Screen name="Home" component={Home} />
       <AppDrawer.Screen name="Registrar" component={New} />
-      <AppDrawer.Screen name="Profile " component={Profile} />
+      <AppDrawer.Screen name="Profile" component={Profile} />
     </AppDrawer.Navigator>
   );
 }
