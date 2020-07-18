@@ -39,8 +39,3 @@ export const LogoutText = styled.Text`
   color: #fff;
   font-weight: bold;
 `;
-
-NewLink;
-NewText;
-Logout;
-LogoutText;
