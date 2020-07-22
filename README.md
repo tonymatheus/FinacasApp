@@ -8,6 +8,7 @@ o registro dos  dados será feito utilizando o Firebase
 
 - [x] React-Native
 - [x] Javascript
+- [x] Styled Components
 - [x] Firebase DB
 - [x] ContextAPI
 
