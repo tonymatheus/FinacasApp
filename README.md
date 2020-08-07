@@ -30,6 +30,15 @@ e depois digite no terminal:
 ```bash
 yarn android 
 ```
+#### Quando Tudo  estiver prontoo  o  resultado será esse
+###### Tela de Login
+
+![AppFinancas1](https://user-images.githubusercontent.com/43850888/89610800-e12d1480-d851-11ea-9f18-6f83669e9572.gif)
+![AppfinacasTela2](https://user-images.githubusercontent.com/43850888/89611039-7d571b80-d852-11ea-8de4-51ce3b42c4ff.gif)
+![Tela Appnocitias3](https://user-images.githubusercontent.com/43850888/89611137-c9a25b80-d852-11ea-8b6b-d1bb7216e1d6.gif)
+![Tela 4 AppFinacas](https://user-images.githubusercontent.com/43850888/89611202-f48caf80-d852-11ea-9d44-dcac943f379b.gif)
+
+
 
 
 
