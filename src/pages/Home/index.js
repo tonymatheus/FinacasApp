@@ -1,10 +1,12 @@
 import React, {useContext, useEffect, useState} from 'react';
-import {Alert} from 'react-native';
+import {Alert, TouchableOpacity, Platform} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import firebase from '../../Services/FirebaseConnection';
 import {AuthConText} from '../../contexts/auth';
 import Header from '../../components/Header';
 import HistoricoList from '../../components/HistoricoList';
+import DatePicker from '../../components/DatePicker';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import {
   Background,
   Container,
@@ -12,6 +14,7 @@ import {
   Nome,
   Saldo,
   Title,
+  Area,
   BtnRegistrar,
 } from './styles';
 import {format, isBefore} from 'date-fns';
@@ -22,6 +25,9 @@ export default function Home() {
   const navigation = useNavigation();
   const [saldo, setSaldo] = useState(0);
   const uid = user && user.uid;
+
+  const [show, setShow] = useState(false);
+  const [newDate, setNewDate] = useState(new Date());
 
   useEffect(() => {
     async function loadList() {
@@ -38,7 +44,7 @@ export default function Home() {
         .ref('historico')
         .child(uid)
         .orderByChild('date')
-        .equalTo(format(new Date(), 'dd/MM/yyyy'))
+        .equalTo(format(newDate, 'dd/MM/yyyy'))
         .limitToLast(10)
         .on('value', snapshot => {
           setHistorico([]);
@@ -56,7 +62,7 @@ export default function Home() {
         });
     }
     loadList();
-  }, []);
+  }, [newDate, uid]);
 
   function handleDelete(data) {
     //Pegando a Data do Item9
@@ -68,6 +74,7 @@ export default function Home() {
     const formatDiaHoje = format(new Date(), 'dd/MM/yyyy');
     const [diaHoje, mesHoje, anoHoje] = formatDiaHoje.split('/');
     const dateHoje = new Date(`${anoHoje}/${mesHoje}/${diaHoje}`);
+
     console.log(dateHoje);
 
     if (isBefore(dateItem, dateHoje)) {
@@ -116,6 +123,19 @@ export default function Home() {
       });
   }
 
+  function handleShowPicker() {
+    setShow(true);
+  }
+  function handleClose() {
+    setShow(false);
+  }
+
+  const onChange = date => {
+    setShow(Platform.OS === 'ios');
+    setNewDate(date);
+    console.log(date);
+  };
+
   return (
     <Background>
       <Header />
@@ -128,8 +148,12 @@ export default function Home() {
           <Title>Resgistrar</Title>
         </BtnRegistrar>
       </Container>
-
-      <Title>Ultimas Movimentações</Title>
+      <Area>
+        <TouchableOpacity onPress={handleShowPicker}>
+          <Icon name="event" color="#fff" size={30} />
+        </TouchableOpacity>
+        <Title>Ultimas Movimentações</Title>
+      </Area>
 
       <List
         showsVerticalScrollIndicator={false}
@@ -139,6 +163,9 @@ export default function Home() {
           <HistoricoList data={item} deleteItem={handleDelete} />
         )}
       />
+      {show && (
+        <DatePicker onClose={handleClose} date={newDate} onChange={onChange} />
+      )}
     </Background>
   );
 }
