@@ -2,7 +2,7 @@
 
 
 ### <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> Hello world! esse é o;<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="24px">
-# Finaças Appp <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Hello_Big.gif" width="30px">
+# Finaças App <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Hello_Big.gif" width="30px">
 - um App de Finanças feito em React-Native que tem como objetivo fazer os registros dos seus gastos,receitas mensais,dando a oportunidade ao usuário de inserir novos gastos ou receitas, podendo também fazer buscas por data e  deletar algum ganho ou gasto,nele você terá a opção de fazer login em sua conta e caso não tenha uma conta é possível fazer o cadastro no própio App.
 
 o registro dos  dados será feito utilizando o Firebase 
