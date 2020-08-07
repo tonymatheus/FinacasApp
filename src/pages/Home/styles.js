@@ -41,9 +41,9 @@ export const List = styled.FlatList.attrs({
 `;
 export const BtnRegistrar = styled.TouchableOpacity`
   background-color: #222;
-  border-radius: 15px;
+  border-radius: 12px;
   height: 20px;
-  margin-right: 280px;
+  width: 70px;
 `;
 export const Area = styled.View`
   align-items: baseline;
