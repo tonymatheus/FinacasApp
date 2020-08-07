@@ -24,7 +24,7 @@ export const Saldo = styled.Text`
 `;
 
 export const Title = styled.Text`
-  margin-left: 15px;
+  margin-left: 5px;
   color: #00b94a;
   margin-bottom: 10px;
 `;
@@ -44,4 +44,9 @@ export const BtnRegistrar = styled.TouchableOpacity`
   border-radius: 15px;
   height: 20px;
   margin-right: 280px;
+`;
+export const Area = styled.View`
+  align-items: baseline;
+  flex-direction: row;
+  margin-left: 5px;
 `;
