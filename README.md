@@ -37,6 +37,8 @@ yarn android
 ![AppfinacasTela2](https://user-images.githubusercontent.com/43850888/89611039-7d571b80-d852-11ea-8de4-51ce3b42c4ff.gif)
 ![Tela Appnocitias3](https://user-images.githubusercontent.com/43850888/89611137-c9a25b80-d852-11ea-8b6b-d1bb7216e1d6.gif)
 ![Tela 4 AppFinacas](https://user-images.githubusercontent.com/43850888/89611202-f48caf80-d852-11ea-9d44-dcac943f379b.gif)
+![Tela4againFinancasApp](https://user-images.githubusercontent.com/43850888/89611501-c8bdf980-d853-11ea-85c8-3f3242b35a5b.gif)
+![FinafinalApp](https://user-images.githubusercontent.com/43850888/89611740-4d107c80-d854-11ea-9cc5-d8fce72b7158.gif)
 
 
 
