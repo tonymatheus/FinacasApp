@@ -11,4 +11,6 @@ o registro dos  dados será feito utilizando o Firebase
 - [x] Styled Components
 - [x] Firebase DB
 - [x] ContextAPI
+- [x] Rotas
+
 
