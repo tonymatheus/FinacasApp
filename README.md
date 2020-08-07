@@ -8,20 +8,31 @@
 o registro dos  dados será feito utilizando o Firebase 
 - ### Para Fazer a utilização do app para testes basta seguir os passos abaixo <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Rocket.gif" width="18px">:
 
-Clone este projeto para seu computador:
+- Clone este projeto para seu computador:
 
 ```bash
 git clone https://github.com/tonymatheus/FinacasApp.git
 ```
+## <a href="https://www.imagensanimadas.com/cat-sinais-de-transito-1615.htm"><img src="https://www.imagensanimadas.com/data/media/1615/sinal-de-transito-imagem-animada-0086.gif" border="0" alt="sinal-de-transito-imagem-animada-0086" /></a> Atenção <a href="https://www.imagensanimadas.com/cat-sinais-de-transito-1615.htm"><img src="https://www.imagensanimadas.com/data/media/1615/sinal-de-transito-imagem-animada-0086.gif" border="0" alt="sinal-de-transito-imagem-animada-0086" /></a>
+- #### Certifique-se de que tem o Android studio e todos os softwares dependentes dele  instalados em sua máquina caso não saiba como instalar aqui estão alguns links para ajudar :
 
-Acesse a pasta do projeto como por exemplo:
+- #### <a href="https://developer.android.com/studio/intro" >Documentação Android Studio</a>
+- #### <a href="https://youtu.be/41j972VFbD4" >Tutorial de como instalar o Android Studio corretamente </a>
+- #### <a href="https://youtu.be/bA5Xfg1v-40" >Tutorial de como instalar o Android Studio corretamente no Linux Ubunto </a>
+
+
+Após isso acesse a pasta do projeto como por exemplo:
 
 ```bash
 cd projeto/app
 ```
+- Com o terminal aberto na pasta do projeto, execute os comandos Abaixo:
 
-Com o terminal aberto na pasta do projeto, execute o comando:
-
+#### Digite primeiro esse comando baixar as dependências do projeto:
+```bash
+npm install ou somente yarn
+```
+- Após isso digite:
 ```bash
 yarn start 
 ```
@@ -31,7 +42,6 @@ e depois digite no terminal:
 yarn android 
 ```
 #### Quando Tudo  estiver prontoo  o  resultado será esse
-###### Tela de Login
 
 ![AppFinancas1](https://user-images.githubusercontent.com/43850888/89610800-e12d1480-d851-11ea-9f18-6f83669e9572.gif)
 ![AppfinacasTela2](https://user-images.githubusercontent.com/43850888/89611039-7d571b80-d852-11ea-8de4-51ce3b42c4ff.gif)
@@ -52,5 +62,6 @@ yarn android
 - [x] <a href="https://firebase.google.com/?hl=pt-br" >Firebase DB </a>
 - [x] <a href="https://pt-br.reactjs.org/docs/context.html">ContextAPI</a>
 - [x] <a href="https://pt-br.reactjs.org/docs/context.html#api" >Autenticação com Context API </a>
+- [x] <a href="https://developer.android.com/studio/?gclid=CjwKCAjw97P5BRBQEiwAGflV6dYnhlqiMNkVdRGTdd40Y83uvbrmV_zxsv85fF-30-oclojc_LXBjRoCkU0QAvD_BwE&gclsrc=aw.ds" >Android Studio</a>
 
 
